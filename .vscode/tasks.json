@@ -1,0 +1,55 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "flutter run",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"run"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "build apk",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"build",
+				"apk",
+				"--release"
+			],
+			"group": "build"
+		},
+		{
+			"label": "build apk",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-Command",
+				"$env:PATH += ';D:\\flutter_windows_3.41.6-stable\\flutter\\bin'; flutter build apk --release"
+			],
+			"group": "build"
+		},
+		{
+			"label": "build apk",
+			"type": "shell",
+			"command": "cmd",
+			"args": [
+				"/c",
+				"set PATH=%PATH%;D:\\flutter_windows_3.41.6-stable\\flutter\\bin && flutter build apk --release"
+			],
+			"group": "build"
+		}
+	]
+}

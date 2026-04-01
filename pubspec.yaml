@@ -1,0 +1,26 @@
+name: walkie_talkie
+description: A Flutter walkie-talkie app with offline communication and USDT payments.
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  nearby_connections: ^3.2.0
+  qr_flutter: ^4.1.0
+  provider: ^6.0.5
+  path_provider: ^2.1.1
+  flutter_sound: ^9.2.13
+  permission_handler: ^11.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
